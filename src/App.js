@@ -13,11 +13,15 @@ function App() {
 }
 
 function Counter() {
-  const [count, setCount] = useState(85)
-  const increaseCount = () => {
-    const newCount = count + 1;
-    setCount(newCount);
-  }
+  const [count, setCount] = useState(85);
+  // one line work
+  const increaseCount = () => setCount(count + 1);
+
+  // multyline work
+  // const increaseCount = () => {
+  //   const newCount = count + 1;
+  //   setCount(newCount);
+  // }
   return (
     <div>
       <h1>Count: {count}</h1>
